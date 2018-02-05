@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Wildcat Canyon Camp Area, 4/20</title>
+</head>
+<body>
+<h1>Reservation</h1>
+<div>
+    <p>
+    Link to reservation form:
+    <a
+            href="https://zionpermits.nps.gov/wildernessapp.cfm?RequestedDate=4/20/2018&ResourceID=20009000">
+        https://zionpermits.nps.gov/wildernessapp.cfm?RequestedDate=4/20/2018&ResourceID=20009000
+    </a>
+    </p>
+</div>
+
+<!--
+<h1>Pre-filled form</h1>
+    <form action="https://zionpermits.nps.gov/wildernessapp.cfm?RequestedDate=3/20/2018&ResourceID=20009000" method="post" name="wildernesspermitapp" id="wildernesspermitapp" onSubmit="return validate(this)">
+        <div class="input-group">Trip Start Date: April 20, 2018</div>
+        <table>
+            <tbody>
+            <tr>
+                <td>Number in Party</td>
+                <td>
+                    <select name="GroupSize" id="GroupSize" size="1">
+                        <option value="7">7</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Permit Fee</td>
+                <td>
+                    <input type="text" name="PermitFee" id="PermitFee" value="5.00" maxlength="10"/>
+                </td>
+            </tr>
+            <tr>
+                <td>ItinGroup</td>
+            </tr>
+            </tbody>
+
+        </table>
+        <div class="input-group">
+            <label for="GroupSize">Number in Party</label>
+            <select name="GroupSize" id="GroupSize" size="1" onChange="calcfees();"
+                    ><option value="7">7</option></select>
+        </div>
+        <p><strong>Select one itinerary from below</strong><span class="red">*</span></p>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <th align="left"><input type="radio" onclick="enablnumnghts()" name="ItinGroup" value="123">&nbsp;Wildcat  Canyon Camp Area</th>
+            </tr>
+            <tr>
+                <td class="daydisplay">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All Other Trailheads <b style="color: Green;">(Begin Trip)</b> &raquo;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wildcat Canyon Camp Area&nbsp;<select name="NumberofNights" size="1" disabled><option value=""></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option>
+                </select> nights&nbsp;&raquo;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All Other Trailheads <b style="color: Green;">(End Trip)</b></td>
+            </tr>
+        </table>
+
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <th align="left"><input type="radio" onclick="enablnumnghts()" name="ItinGroup" value="124">&nbsp;Wildcat  Canyon Camp Area</th>
+            </tr>
+            <tr>
+                <td class="daydisplay">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wildcat Canyon Trailhead <b style="color: Green;">(Begin Trip)</b> &raquo;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wildcat Canyon Camp Area&nbsp;<select name="NumberofNights" size="1" disabled><option value=""></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option>
+                </select> nights&nbsp;&raquo;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wildcat Canyon Trailhead <b style="color: Green;">(End Trip)</b></td>
+            </tr>
+        </table>
+
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <th align="left"><input type="radio" onclick="enablnumnghts()" name="ItinGroup" value="125">&nbsp;Wildcat Canyon Camp Area</th>
+            </tr>
+            <tr>
+                <td class="daydisplay">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lava Point Trailhead <b style="color: Green;">(Begin Trip)</b> &raquo;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wildcat Canyon Camp Area&nbsp;<select name="NumberofNights" size="1" disabled><option value=""></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option>
+                </select> nights&nbsp;&raquo;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lava Point Trailhead <b style="color: Green;">(End Trip)</b></td>
+            </tr>
+        </table>
+
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <th align="left"><input type="radio" onclick="enablnumnghts()" name="ItinGroup" value="126">&nbsp;Wildcat Canyon Camp Area</th>
+            </tr>
+            <tr>
+                <td class="daydisplay">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lava Point Trailhead <b style="color: Green;">(Begin Trip)</b> &raquo;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wildcat Canyon Camp Area&nbsp;<select name="NumberofNights" size="1" disabled><option value=""></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option>
+                </select> nights&nbsp;&raquo;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wildcat Canyon Trailhead <b style="color: Green;">(End Trip)</b></td>
+            </tr>
+        </table>
+
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <th align="left"><input type="radio" onclick="enablnumnghts()" name="ItinGroup" value="127">&nbsp;Wildcat Canyon Camp Area</th>
+            </tr>
+            <tr>
+                <td class="daydisplay">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wildcat Canyon Trailhead <b style="color: Green;">(Begin Trip)</b> &raquo;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wildcat Canyon Camp Area&nbsp;<select name="NumberofNights" size="1" disabled><option value=""></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option>
+                </select> nights&nbsp;&raquo;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lava Point Trailhead <b style="color: Green;">(End Trip)</b></td>
+            </tr>
+        </table>
+
+        <strong>Reservation Holder Information</strong><br>
+
+        <div class="input-group">
+            <label for="FirstName">First Name:</label>
+            <input type="text" name="FirstName" id="FirstName" value="" maxlength="25" class="input-sm form-control">
+        </div>
+        <div class="input-group">
+            <label for="LastName">Last Name:</label>
+            <input type="text" name="LastName" id="LastName" value="" maxlength="50" class="input-sm form-control">
+        </div>
+
+        <div class="input-group">
+            <span class="red">*</span> <label for="State">State of residence: (U.S. and Canada only)</label>
+            <select name="State" id="State" size="1" onChange="chgcountry();" class="simple-multiselect form-control"><option value="" selected></option><option value="130">AB (Canada)</option><option value="110">AK</option><option value="1">Alabama</option><option value="48">Alaska</option><option value="76">Alberta (Canada)</option><option value="4">Arizona</option><option value="3">Arkansas</option><option value="60">British Columbia (Canada)</option><option value="132">Calgary (Canada)</option><option value="5">California</option><option value="109">CO</option><option value="6">Colorado</option><option value="7">Connecticut</option><option value="9">Delaware</option><option value="8">District of Columbia</option><option value="11">Florida</option><option value="12">Georgia</option><option value="13">Hawaii</option><option value="15">Idaho</option><option value="16">Illinois</option><option value="17">Indiana</option><option value="14">Iowa</option><option value="18">Kansas</option><option value="19">Kentucky</option><option value="20">Louisiana</option><option value="23">Maine</option><option value="61">Manitoba (Canada)</option><option value="22">Maryland</option><option value="21">Massachusetts</option><option value="127">MD</option><option value="24">Michigan</option><option value="25">Minnesota</option><option value="27">Mississippi</option><option value="26">Missouri</option><option value="28">Montana</option><option value="115">Montreal</option><option value="49">Nebraska</option><option value="117">Netherlands</option><option value="33">Nevada</option><option value="62">New Brunswick (Canada)</option><option value="30">New Hampshire</option><option value="31">New Jersey</option><option value="32">New Mexico</option><option value="34">New York</option><option value="63">Newfoundland (Canada)</option><option value="29">North Carolina</option><option value="50">North Dakota</option><option value="64">Northwest Territory (Canada)</option><option value="65">Nova Scotia (Canada)</option><option value="35">Ohio</option><option value="36">Oklahoma</option><option value="69">Ontario (Canada)</option><option value="37">Oregon</option><option value="108">PA</option><option value="38">Pennsylvania</option><option value="66">Prince Edward Island (Canada)</option><option value="51">Puerto Rico</option><option value="71">Quebec (Canada)</option><option value="52">Rhode Island</option><option value="67">Saskatchewan (Canada)</option><option value="39">South Carolina</option><option value="53">South Dakota</option><option value="40">Tennessee</option><option value="41">Texas</option><option value="42">Utah</option><option value="44">Vermont</option><option value="43">Virginia</option><option value="45">Washington</option><option value="114">Washington D.C.</option><option value="54">West Virginia</option><option value="46">Wisconsin</option><option value="47">Wyoming</option><option value="113">x</option><option value="68">Yukon Territory (Canada)</option></select>
+        </div>
+        <div class="input-group">
+            <span class="red">*</span> <label for="CountryID">Country of residence:</label>
+            <select name="CountryID" id="CountryID" size="1" onChange="chgstate();" class="simple-multiselect form-control"><option value="57">Albania</option><option value="54">Argentina</option><option value="22">Australia</option><option value="21">Austria</option><option value="71">Bahamas</option><option value="76">Bavaria</option><option value="9">Belgium</option><option value="51">Belize</option><option value="32">Bermuda</option><option value="37">Brazil</option><option value="13">Canada</option><option value="14">Cayman Islands</option><option value="65">Chile</option><option value="42">China</option><option value="33">Columbia</option><option value="59">Costa Rica</option><option value="31">Czech Republic</option><option value="17">Denmark</option><option value="70">Ecuador</option><option value="74">El Salvador</option><option value="5">England</option><option value="90">Estonia</option><option value="36">Finland</option><option value="3">France</option><option value="2">Germany</option><option value="66">Greece</option><option value="30">Guam</option><option value="84">Guatamala</option><option value="7">Hungary</option><option value="68">Iceland</option><option value="39">India</option><option value="34">Ireland</option><option value="27">Israel</option><option value="11">Italy</option><option value="26">Japan</option><option value="82">Kenya</option><option value="72">Korea</option><option value="50">Latvia</option><option value="28">Liechtenstein</option><option value="83">lithuania</option><option value="24">Luxembourg</option><option value="62">Luxembourg</option><option value="87">Malta</option><option value="29">Mexico</option><option value="67">Morocco</option><option value="12">Netherlands</option><option value="23">New Zealand</option><option value="79">Nicaragua</option><option value="35">Norway</option><option value="95">Oman</option><option value="64">Peru</option><option value="58">Phillippines</option><option value="6">Poland</option><option value="86">Portaguel</option><option value="75">Portugal</option><option value="38">Puerto Rico</option><option value="15">Romania</option><option value="41">Russia</option><option value="25">Scotland</option><option value="94">Serbia</option><option value="53">Singapore</option><option value="80">Slovenia</option><option value="93">Slovenija</option><option value="4">Slovokia</option><option value="78">solvokia</option><option value="18">South Africa</option><option value="44">South Korea</option><option value="8">Spain</option><option value="77">Sri Lanka</option><option value="92">st martin, carribean</option><option value="46">Sweden</option><option value="10">Switzerland</option><option value="52">Taiwan</option><option value="88">Thailand</option><option value="85">Turkey</option><option value="40">Uganda</option><option value="47">Ukraine</option><option value="89">United Arab Emirates</option><option value="16">United Kingdom</option><option value="1" selected>United States</option><option value="73">Uraguay</option><option value="91">USA</option><option value="45">Wales</option><option value="81">winnipeg</option><option value="" class="znpwpcountrynotinlist">Not in this list</option></select>
+        </div>
+        <div class="input-group">
+            <span class="red">*</span> <label for="VehicleMake">Vehicle Make:</label>
+            <input type="checkbox" name="rentalvehicle" value="1" onClick="rental();">Rental or Unknown
+            <input type="text" name="VehicleMake" id="VehicleMake" value="" maxlength="25" class="input-sm form-control" placeholder="eg. Dodge, Ford, Toyota">
+        </div>
+        <div class="input-group">
+            <span class="red">*</span> <label for="VehicleColor">Vehicle Color:</label>
+            <input type="text" name="VehicleColor" id="VehicleColor" value="" maxlength="25" class="input-sm form-control">
+        </div>
+        <div class="input-group">
+            <span class="red">*</span> <label for="VehicleLic">Vehicle License (State &amp; number):</label>
+            <input type="text" name="VehicleLic" id="VehicleLic" value="" maxlength="20" class="input-sm form-control" placeholder="eg. ut&nbsp;&nbsp;12345, ut&nbsp;&nbsp;newcar, az&nbsp;&nbsp;dth2345"><br><span class="countdown">IMPORTANT: 2 letter state abbreviation, 2 spaces and license number</span>
+        </div>
+        <div class="input-group">
+            <span class="red">*</span> <label for="EmailAddress">Email Address:</label>
+            <input type="text" name="EmailAddress" id="EmailAddress" value="" maxlength="150" class="input-sm form-control">
+        </div>
+        <strong>Emergency Contact Information</strong><br>
+        <div class="input-group">
+            <span class="red">*</span> <label for="EmergencyContact">Name:</label>
+            <input type="text" name="EmergencyContact" id="EmergencyContact" value="" maxlength="25" class="input-sm form-control">
+        </div>
+        <div class="input-group">
+            <span class="red">*</span> <label for="EmergencyPhone">Phone Number:</label>
+            <input type="text" name="EmergencyPhone" id="EmergencyPhone" value="" maxlength="30" class="input-sm form-control">
+        </div>
+        <p><strong>Reservation applicants must agree to the following permit conditions:</strong><br><div align="right"><a href="https://zionpermits.nps.gov/conditionsofpermit.cfm?TripTypeID=1" target="_blank" title="Open a printable version of the Conditions of Permit in a separate window" class="navlinkblue">Printable Version</a></div></p>
+        <table width="100%" border="0" cellspacing="0" cellpadding="3" style="border: 1px solid #EEEEEE;"><tbody>
+        <tr bgcolor="#f0fff0">
+            <td>
+                <table border="0" cellpadding="4" cellspacing="0" width="100%" style="border: 1px solid #006400;">
+                    <tr>
+                        <td width="75"><span class="red">*</span><input name="agreecheck" type="checkbox" onClick="agreesubmit()">&nbsp;<strong>I have read and agree with the conditions to the right.</strong></td>
+                        <td><p><img hspace="2" src="https://zionpermits.nps.gov/images/SAR.JPG" border="0" align="right" alt="">I have adequately planned and
+                            <br>prepared for this trip. I am aware of
+                            <br>the risks involved with travel in the
+                            <br>wilderness of Zion National Park. I have
+                            <br>taken action to ensure that my group is
+                            <br>self-reliant and aware of the risks involved with this trip. I understand that rescue is not a certainty. My safety and the safety of my group is my responsibility.
+                            <br>
+                            <br>West Rim may be covered by several feet of snow from November through April.  Trail may be impassable due to snow slides and ice.
+                            <br>
+                            <br>The Kolob Canyons Road to Lee Pass Trailhead may be closed due to snow during winter months.</p></td>
+                    </tr>
+                </table>
+            </td>
+        </tr> <tr bgcolor="#fcfaf2">
+            <td>
+                <table border="0" cellpadding="4" cellspacing="0" width="100%" style="border: 1px solid #006400;">
+                    <tr>
+                        <td width="75"><span class="red">*</span><input name="agreecheck" type="checkbox" onClick="agreesubmit()">&nbsp;<strong>I have read and agree with the conditions to the right.</strong></td>
+                        <td><p><img hspace="2" src="https://zionpermits.nps.gov/images/group_size.jpg" border="0" align="right" alt="">I will not exceed the group size limit
+                            <br>of 12 people. A group is any number
+                            <br>of people sharing the same affiliation
+                            <br>(school, club, scout troop, family, friends, etc...) traveling on the same trail or drainage on the same day. Permits will be denied and violators will be cited if limits are exceeded.</p></td>
+                    </tr>
+                </table>
+            </td>
+        </tr> <tr bgcolor="#f0fff0">
+            <td>
+                <table border="0" cellpadding="4" cellspacing="0" width="100%" style="border: 1px solid #006400;">
+                    <tr>
+                        <td width="75"><span class="red">*</span><input name="agreecheck" type="checkbox" onClick="agreesubmit()">&nbsp;<strong>I have read and agree with the conditions to the right.</strong></td>
+                        <td><p><img hspace="2" src="https://zionpermits.nps.gov/images/Fire.JPG" border="0" align="right" alt="">We will not build camp fires.
+                            <br>
+                            <br>Pets, vehicles, discharge of weapons,
+                            <br>hunting, and feeding wildlife are
+                            <br>prohibited.
+                            <br>
+                            <br>All natural objects and cultural artifacts are protected and must be left where they are found.
+                            <br>
+                            <br>My group will protect the wilderness
+                            <br>resources. We will bury human waste four inches or deeper and 200 feet or more from campsites and water sources and carry out all trash, including toilet paper.
+                            <br>
+                            <br>We will use existing trails to prevent
+                            <br>erosion, and we will not build structures including benches, tables, and shelters.
+                            <br>
+                            <br>We will purify all water before
+                            <br>drinking. </p></td>
+                    </tr>
+                </table>
+            </td>
+        </tr> <tr bgcolor="#fcfaf2">
+            <td>
+                <table border="0" cellpadding="4" cellspacing="0" width="100%" style="border: 1px solid #006400;">
+                    <tr>
+                        <td width="75"><span class="red">*</span><input name="agreecheck" type="checkbox" onClick="agreesubmit()">&nbsp;<strong>I have read and agree with the conditions to the right.</strong></td>
+                        <td><p><img hspace="2" src="https://zionpermits.nps.gov/images/Tent.jpg" border="0" align="right" alt="">In at-large camping areas, camps
+                            <br>should be 200 feet from streams and trails and ¼ mile from springs. Camping in previously used areas, or on bare ground, is encouraged. Do not trample biological soil.
+                            <br>
+                            <br>In designated camping areas, camp
+                            <br>within the previously disturbed area. Permits are valid only for the campsites
+                            <br>and dates shown on this permit.</p></td>
+                    </tr>
+                </table>
+            </td>
+        </tr> <tr bgcolor="#f0fff0">
+            <td>
+                <table border="0" cellpadding="4" cellspacing="0" width="100%" style="border: 1px solid #006400;">
+                    <tr>
+                        <td width="75"><span class="red">*</span><input name="agreecheck" type="checkbox" onClick="agreesubmit()">&nbsp;<strong>I have read and agree with the conditions to the right.</strong></td>
+                        <td><p><img hspace="2" src="https://zionpermits.nps.gov/images/Narrows.jpg" border="0" align="right" alt="">I am aware of the weather and
+                            <br>assume the risks involved. I have a route description, map, compass, and the
+                            <br>ability to use them. My group and I have
+                            <br>the proper equipment, skill level, and
+                            <br>physical fitness to successfully complete this trip.</p></td>
+                    </tr>
+                </table>
+            </td>
+        </tr> <tr bgcolor="#fcfaf2">
+            <td>
+                <table border="0" cellpadding="4" cellspacing="0" width="100%" style="border: 1px solid #006400;">
+                    <tr>
+                        <td width="75"><span class="red">*</span><input name="agreecheck" type="checkbox" onClick="agreesubmit()">&nbsp;<strong>I have read and agree with the conditions to the right.</strong></td>
+                        <td><p><img hspace="2" src="https://zionpermits.nps.gov/images/LForkFlood.jpg" border="0" align="right" alt="">NARROWS ONLY
+                            <br>
+                            <br>I am aware of the weather and the flash
+                            <br>flood potential rating and assume the
+                            <br>risks involved with entering a canyon.
+                            <br>Storms from miles away can produce
+                            <br>flash floods that can be life threatening. If bad weather threatens, my group will not enter a narrow canyon. I will continuously evaluate the weather and adjust my plans to keep my group and myself safe.
+                            <br>
+                            <br>We will use and pack out human
+                            <br>waste disposal bags for solid human
+                            <br>waste, urinate in the river to prevent
+                            <br>objectionable odors, and carry out all
+                            <br>toilet paper.
+                            <br>
+                            <br>Upstream travel to campsites is
+                            <br>prohibited.</p></td>
+                    </tr>
+                </table>
+            </td>
+        </tr> <tr bgcolor="#f0fff0">
+            <td>
+                <table border="0" cellpadding="4" cellspacing="0" width="100%" style="border: 1px solid #006400;">
+                    <tr>
+                        <td width="75"><span class="red">*</span><input name="agreecheck" type="checkbox" onClick="agreesubmit()">&nbsp;<strong>I have read and agree with the conditions to the right.</strong></td>
+                        <td><p><img hspace="2" src="https://zionpermits.nps.gov/images/Weather.JPG" border="0" align="right" alt="">NARROWS ONLY
+                            <br>
+                            <br>When the National Weather Service issues a Flash Flood Warning for any portion of Zion National Park, all canyons within the park are considered closed.  The canyons remain closed until two hours after the Flash Flood Warning is lifted.
+                            <br>
+                            <br>Permits are not issued for the Narrows when the river is running in excess of 120 cfs.
+                            <br>
+                            <br>The river flow, Zion Canyon Forecast, Headwaters Forecast and flash flood potential are available at: http://www.nps.gov/zion/planyourvisit/weather-and-climate.htm
+                            <br>
+                            <br>The Narrows is usually impassable from late October through early June each year due to high water and cold temperatures.</p></td>
+                    </tr>
+                </table>
+            </td>
+        </tr> <tr bgcolor="#fcfaf2">
+            <td>
+                <table border="0" cellpadding="4" cellspacing="0" width="100%" style="border: 1px solid #006400;">
+                    <tr>
+                        <td width="75"><span class="red">*</span><input name="agreecheck" type="checkbox" onClick="agreesubmit()">&nbsp;<strong>I have read and agree with the conditions to the right.</strong></td>
+                        <td><p><img hspace="2" src="https://zionpermits.nps.gov/images/LNT_sticker_purple.jpg" border="0" align="right" alt="">ALL PERMITS
+                            <br>
+                            <br>I have read and fully understand the rules associated with my trip and I agree to comply accordingly.
+                            <br>
+                            <br>I will contact the Zion National Park wilderness permit office if there is a reduction in my group size or cancellation of a trip.
+                            <br>
+                            <br>I will notify the wilderness permit office if my vehicle or emgergency contact information changes. (435)-772-0170.
+                            <br>
+                            <br>I am 18 years of age or older.
+                            <br>
+                            <br>I agree that I am participating in this trip and take responsibility for the other members of my group.
+                            <br>
+                            <br>I understand that I will be charged an additional permit fee of $15-25(depending on group size) when I obtain my permit.   I also understand that an entrance pass or fee is required to enter the park.
+                            <br>
+                            <br>
+                            <br>I will carry my permit with me, and I will advise a friend or family member to notify the National Park Service if I am overdue.</p></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        </tbody></table>
+
+        <div class="input-group">
+            <span class="red">*</span><input name="agreecheck" type="checkbox" onClick="agreesubmit();">&nbsp;<strong>I understand and agree that the reservation fee is non-refundable.</strong>
+        </div>
+
+         <div class="input-group">
+            <button name="bcpermitappbutton" id="bcpermitappbutton" type="submit" disabled class="znpwpexp-submitButton" title="Click here to submit this application form">Submit Reservation Application</button>
+        </div>
+        <input type="hidden" name="NumberofNights_required" value="Enter the number of nights for your trip."> <input type="hidden" name="GroupSize_required" value="Please enter the number in your party."><input type="hidden" name="FirstName_required" value="Please enter the applicants first name."><input type="hidden" name="LastName_required" value="Please enter the applicants last name."><input type="hidden" name="FeeTypeID" value=" 6.0"><input type="hidden" name="ResourceID" value="20009000"><input type="hidden" name="ItinGroup_Required" value="Please select an itinerary for your trip."><input type="hidden" name="agreecheck_required" value="You need to agree to the permit conditions."><input type="hidden" name="RecordID" value="522EF35D-B293-C9AB-9903077398640A80"><input type="hidden" name="ZEPToken" value="5ACDC54027F0F62808D597AB827D31537DDAB566FCCBE2ED1556D2E9F24EEF9B4F836E6059A8B78F13A2753A0EBEDBE01BFA0F6E855F1169590D7EA6EE992622"><input type="hidden" name="VehicleMake_required" value="Please enter the make of the vehicle you will bring to the Park."><input type="hidden" name="RequestedDate" value="03/20/2018"><input type="hidden" name="VehicleColor_required" value="Please enter the color of the vehicle you will bring to the Park."><input type="hidden" name="VehicleLic_required" value="Please enter the license number of the vehicle you will bring to the Park."><input type="hidden" name="EmailAddress_required" value="Please enter the email address."><input type="hidden" name="EmergencyContact_required" value="Please enter an emergency contact name."><input type="hidden" name="EmergencyPhone_required" value="Please enter an emergency contact phone number."></form>
+</form>
+
+-->
+</body>
+</html>
